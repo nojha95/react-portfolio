@@ -7,12 +7,12 @@ interface Props extends PropsWithChildren {
   variant: "solid" | "outlined";
 }
 
-const Button: React.FC<Props> = ({
+const Button = ({
   onClick,
   size = "medium",
   variant = "solid",
   children,
-}) => {
+}: Props) => {
   const ButtonContainer = styled.div`
     display: flex;
     height: ${size === "small" ? "3rem" : "3.5rem"};
@@ -49,7 +49,7 @@ const Button: React.FC<Props> = ({
   `;
 
   return (
-    <ButtonContainer>
+    <ButtonContainer className="hover:scale-110">
       <StyledButton onClick={onClick}>{children}</StyledButton>
     </ButtonContainer>
   );

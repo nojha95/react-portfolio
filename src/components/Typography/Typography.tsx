@@ -14,12 +14,18 @@ interface Props extends PropsWithChildren {
     | "p2"
     | "p3";
   type?: "regular" | "semiBold" | "bold" | "extraBold";
+  color?: string;
 }
 
-const Typography = ({ variant = "h5", type = "regular", children }: Props) => {
+const Typography = ({
+  variant = "h5",
+  type = "regular",
+  color = "var(--Gray-900, #18181b)",
+  children,
+}: Props) => {
   const Typography = styled.span`
     font-family: "Arial", sans-serif;
-    color: var(--Gray-900, #18181b);
+    color: ${color};
     font-style: normal;
     /* Variant-specific styles */
 
