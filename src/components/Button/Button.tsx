@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import React, { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 
 interface Props extends PropsWithChildren {
   onClick?: () => void;

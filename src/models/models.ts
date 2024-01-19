@@ -5,3 +5,14 @@ export type Skill = {
   icon: string;
   variant: CardVariant;
 };
+
+export type Experience = {
+  designation: string;
+  period: string;
+  discription: string;
+};
+
+export type Project = {
+  title: string;
+  description: string;
+};

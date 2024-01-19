@@ -1,4 +1,3 @@
-import person from "../../assets/person.svg";
 import download from "../../assets/download.svg";
 import Button from "../Button/Button";
 import Typography from "../Typography/Typography";
