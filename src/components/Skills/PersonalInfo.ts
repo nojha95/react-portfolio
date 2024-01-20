@@ -5,7 +5,7 @@ export const PersonalInfo = {
   jobTitle: "Fullstack Developer",
   location: "India",
   about:
-    "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+    "I'm Nikhil, a seasoned tech enthusiast with experience in AI / ML, Big Data, Web Development, and Cloud Computing. I specialize in designing innovative and scalable AI solutions, demonstrating a deep understanding of modern toolsets on various cloud platforms. My passion lies in pushing the boundaries of technology to create impactful and reliable applications.",
   linkedin: "https://luli",
   github: "https://github.com/nojha95",
 };

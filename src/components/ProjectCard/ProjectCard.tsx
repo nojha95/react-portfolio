@@ -9,10 +9,10 @@ interface Props {
 const ProjectCard = ({ project, index }: Props) => {
   return (
     <div className="flex py-5 w-full">
-      <div className="grid grid-cols-2 items-center">
+      <div className="grid xl:grid-cols-2 l:grid-cols-2 grid-cols-1 items-center">
         <div
           className={`flex flex-col gap-8 ${
-            index % 2 ? "order-1 mr-20" : "order-2 ml-20"
+            index % 2 ? "lg:order-1 lg:mr-20 m-4" : "lg:order-2  lg:ml-20 m-4"
           }`}
         >
           <Typography variant="h2" type="bold" color="white">
@@ -27,7 +27,9 @@ const ProjectCard = ({ project, index }: Props) => {
         </div>
         <div
           className={`max-h-[20rem]  mt-10 overflow-clip rounded-md ${
-            index % 2 ? "order-2 ml-20" : "order-1 mr-20"
+            index % 2
+              ? "lg:order-2 l:ml-20 xl:ml-20 m-4"
+              : "lg:order-1 lg:mr-20 m-4"
           } `}
         >
           <img src={immi} className=""></img>

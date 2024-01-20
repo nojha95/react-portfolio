@@ -6,11 +6,10 @@ const Header = () => {
   return (
     <div className="flex flex-col w-full px-4 py-2 lg:px-16 lg:py-2 items-center">
       <div className="flex py-2 px-4 w-full justify-between items-center bg-white">
-        <div className="flex items-center gap-3">
-          <div className="h-10 w-10">{/* <img src={person} /> */}</div>
+        {/* <div className="flex items-center gap-3">
           <Typography>Nikhil Ojha</Typography>
-        </div>
-        <div className="hidden lg:flex justify-center items-center gap-8">
+        </div> */}
+        <div className="hidden w-full lg:flex justify-center items-center gap-8">
           <Typography variant="h5" type="bold">
             About Me
           </Typography>

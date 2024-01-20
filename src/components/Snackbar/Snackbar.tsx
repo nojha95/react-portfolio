@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import * as Toast from "@radix-ui/react-toast";
-import Button from "../Button/Button";
 
 interface Props {
   open: boolean;

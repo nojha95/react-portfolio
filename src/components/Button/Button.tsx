@@ -16,7 +16,7 @@ const Button = ({
     <div
       onClick={onClick}
       className={` flex rounded font-sans  hover:scale-110 cursor-pointer 
-      ${size === "small" ? "py-3 px-4" : "py-4 px-5"}
+      ${size === "small" ? "lg:py-3 lg:px-4 p-2" : "lg:py-4 lg:px-5 p-2"}
       ${
         variant === "solid"
           ? "bg-black text-white"

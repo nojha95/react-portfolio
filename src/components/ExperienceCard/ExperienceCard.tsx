@@ -22,7 +22,7 @@ const ExperienceCard = ({ experience, variant = "dark" }: Props) => {
 
   return (
     <ExperienceCardDiv>
-      <div className="flex w-full lg:flex-row sm:flex-col gap-1 justify-between">
+      <div className="flex w-full l:flex-row xl:flex-row flex-col gap-1 justify-between">
         <div>
           <Typography color="white" type="semiBold">
             {experience.designation}

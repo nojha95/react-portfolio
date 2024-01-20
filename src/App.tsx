@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="flex w-full min-h-[100vh] px-20 py-[3.75rem] bg-white items-start">
+      <div className="flex w-full min-h-[100vh] px-20 py-[3.75rem]  bg-white items-start">
         <div className="flex flex-col items-center justify-center lg:flex-row lg:items-start lg:gap-12 lg:w-[100%] mx-auto lg:h-[100%]">
           <div className="flex w-full lg:w-[38rem] py-5 px-4 flex-col items-center lg:items-start lg:gap-12 lg:mr-[4rem]">
             <Typography variant="h1" type="regular">
@@ -52,20 +52,20 @@ function App() {
             <div className="lg:m-0 my-8">
               <Typography variant="p2">{PersonalInfo.about}</Typography>
             </div>
-            <div className="flex w-full py-1 items-start lg:gap-8 sm:gap-4">
+            <div className="flex w-full py-1 items-start lg:gap-8 gap-4">
               <Button size="small" variant="outlined" onClick={onClickPhone}>
-                <img src={phone_icon} className="sm:h-4 h-8"></img>
+                <img src={phone_icon} className="h-4 lg:h-8"></img>
               </Button>
 
               <Button size="small" variant="outlined" onClick={onClickEmail}>
-                <img src={mail_icon} className="sm:h-4 h-8"></img>
+                <img src={mail_icon} className="h-4 lg:h-8"></img>
               </Button>
 
               <Button size="small" variant="outlined">
-                <img src={linkdin} className="sm:h-4 h-8"></img>
+                <img src={linkdin} className="h-4 lg:h-8"></img>
               </Button>
               <Button size="small" variant="outlined">
-                <img src={github} className="sm:h-4 h-8"></img>
+                <img src={github} className="h-4 lg:h-8"></img>
               </Button>
             </div>
           </div>
@@ -87,7 +87,7 @@ function App() {
           />
         </div>
       </div>{" "}
-      <div className="flex w-full min-h-[100vh]  px-20 py-10 flex-col justify-center items-center bg-black">
+      <div className="flex w-full min-h-[100vh]  lg:px-20 py-10 flex-col px-10 justify-center items-center bg-black">
         <div className="mx-auto mb-6">
           <Typography variant="h2" type="semiBold" color="#fff">
             My Experience
@@ -103,7 +103,7 @@ function App() {
           ))}
         </div>
       </div>
-      <div className="flex w-full min-h-[100vh]  px-20 py-10  flex-col justify-center items-center">
+      <div className="flex w-full min-h-[100vh]  lg:px-20 lg:py-10 px-10 py-5 flex-col justify-center items-center">
         <div className="flex w-full px-8 flex-col items-start gap-5">
           <div className="mx-auto mb-6">
             <Typography variant="h2" type="semiBold">
@@ -111,7 +111,7 @@ function App() {
             </Typography>
           </div>
           <div className="w-full mx-auto">
-            <div className="grid  lg:grid-cols-5 lg:gap-16 md:grid-cols-3 md:gap-8 sm:grid-cols-2 sm:gap-8 ">
+            <div className="grid lg:grid-cols-5 lg:gap-16 md:grid-cols-3 md:gap-8 grid-cols-2 gap-4 ">
               {skills.map((data, key) => (
                 <SkillCard
                   key={key}
