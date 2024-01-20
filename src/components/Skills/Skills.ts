@@ -4,6 +4,9 @@ import git_icon from "../../assets/git.svg";
 import ts_icon from "../../assets/typescript.svg";
 import azure_icon from "../../assets/azure.svg";
 import flask_icon from "../../assets/flask.svg";
+import docker_icon from "../../assets/docker.svg";
+import sql_icon from "../../assets/sql.svg";
+
 import { Skill } from "../../models/models";
 
 export const skills: Skill[] = [
@@ -35,6 +38,16 @@ export const skills: Skill[] = [
   {
     name: "Flask",
     icon: flask_icon,
+    variant: "outlined",
+  },
+  {
+    name: "Docker",
+    icon: docker_icon,
+    variant: "outlined",
+  },
+  {
+    name: "SQL",
+    icon: sql_icon,
     variant: "outlined",
   },
 ];

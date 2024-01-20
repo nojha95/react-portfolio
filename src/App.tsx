@@ -12,7 +12,25 @@ import ExperienceCard from "./components/ExperienceCard/ExperienceCard";
 import { Experiences } from "./components/Skills/Experiences";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
 import { projects } from "./components/Skills/Projects";
+import phone_icon from "./assets/phone.svg";
+import mail_icon from "./assets/email.svg";
+import Snackbar from "./components/Snackbar/Snackbar";
+import { useState } from "react";
+import { PersonalInfo } from "./components/Skills/PersonalInfo";
+
 function App() {
+  const [openPhoneSnackbar, setOpenPhoneSnackbar] = useState(false);
+  const [openMailSnackbar, setOpenMailSnackbar] = useState(false);
+
+  const onClickPhone = () => {
+    navigator.clipboard.writeText(PersonalInfo.phone);
+    setOpenPhoneSnackbar(true);
+  };
+
+  const onClickEmail = () => {
+    navigator.clipboard.writeText(PersonalInfo.email);
+    setOpenMailSnackbar(true);
+  };
   return (
     <>
       <Header />
@@ -22,32 +40,45 @@ function App() {
             <Typography variant="h1" type="regular">
               Hello, I am{" "}
               <Typography variant="h1" type="bold">
-                Nikhil Ojha. Fullstack Developer{" "}
+                {PersonalInfo.name}. {PersonalInfo.jobTitle}{" "}
                 <Typography variant="h1" type="regular">
                   Based in{" "}
                 </Typography>
                 <Typography variant="h1" type="bold">
-                  India
+                  {PersonalInfo.location}
                 </Typography>
               </Typography>{" "}
             </Typography>
             <div className="lg:m-0 my-8">
-              <Typography variant="p2">
-                I'm Evren Shah Lorem Ipsum is simply dummy text of the printing
-                and typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to specimen book.
-              </Typography>
+              <Typography variant="p2">{PersonalInfo.about}</Typography>
             </div>
-            <div className="flex w-full py-1 items-start gap-8">
+            <div className="flex w-full py-1 items-start lg:gap-8 sm:gap-4">
+              <Button size="small" variant="outlined" onClick={onClickPhone}>
+                <img src={phone_icon} className="sm:h-4 h-8"></img>
+              </Button>
+
+              <Button size="small" variant="outlined" onClick={onClickEmail}>
+                <img src={mail_icon} className="sm:h-4 h-8"></img>
+              </Button>
+
               <Button size="small" variant="outlined">
-                <img src={linkdin}></img>
+                <img src={linkdin} className="sm:h-4 h-8"></img>
               </Button>
               <Button size="small" variant="outlined">
-                <img src={github}></img>
+                <img src={github} className="sm:h-4 h-8"></img>
               </Button>
             </div>
           </div>
+          <Snackbar
+            open={openPhoneSnackbar}
+            setOpen={setOpenPhoneSnackbar}
+            description="Copied Phone to clipboard"
+          />
+          <Snackbar
+            open={openMailSnackbar}
+            setOpen={setOpenMailSnackbar}
+            description="Copied Email to clipboard"
+          />
 
           <img
             src={developer}
