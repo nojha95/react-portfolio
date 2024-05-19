@@ -31,7 +31,7 @@ export const skills: Skill[] = [
     variant: "solid",
   },
   {
-    name: "Azure Cloud",
+    name: "MS Azure",
     icon: azure_icon,
     variant: "outlined",
   },

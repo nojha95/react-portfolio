@@ -2,21 +2,21 @@ import { Experience } from "../../models/models";
 
 export const Experiences: Experience[] = [
   {
-    designation: "Lead Software Engineer at Home",
-    period: "Jan 2019 - Oct 2023",
+    designation: "Senior AI Developer at Axtria",
+    period: "July 2022 - Current",
     discription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+      "As a pivotal member of the Axtria Center of Excellence team, I lead the innovation and deployment of cutting-edge technologies. My expertise centers around building full-stack applications embedded with AI, including developing and benchmarking demos, PoVs, and PoCs. I craft reusable assets and architect frameworks that integrate Python Flask/FastAPI backends with responsive React/TypeScript frontends, elevating our projects and business practices.",
   },
   {
-    designation: "Software Engineer at Home",
-    period: "Jan 2017 - Oct 2019",
+    designation: "Research Assistant at IIIT Allahabad",
+    period: "Aug 2020 - Jun 2022",
     discription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+      "Worked as a Research Assistant in IIIT Allahabad's Machine Learning and Optimization Lab under the guidance of Dr. KP Singh. My research focused on deep learning and neural networks, particularly in anomaly detection. In addition to research work, I assisted professor with coursework and organized machine learning workshops and events.",
   },
   {
-    designation: "Junior Software Engineer at Home",
-    period: "Jan 2023 - Oct 2050",
+    designation: "System Engineer - Infrastructure at Comviva Technologies",
+    period: "Nov 2017 - Mar 2019",
     discription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+      "As a Systems Reliability Engineer, I was responsible for maintaining and improving the reliability of both Cloud and On-Premises production servers. My role included diagnosing and resolving issues in the production environment to ensure optimal performance and uptime. Additionally, I prepared detailed dashboards and KPI reports, which I discussed with clients during weekly governance meetings to provide transparency and insights into system performance",
   },
 ];

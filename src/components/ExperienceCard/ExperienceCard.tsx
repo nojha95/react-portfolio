@@ -29,12 +29,12 @@ const ExperienceCard = ({ experience, variant = "dark" }: Props) => {
           </Typography>
         </div>
         <div>
-          <Typography color="white" type="semiBold">
+          <Typography  color="white" type="semiBold">
             {experience.period}
           </Typography>
         </div>
       </div>
-      <Typography color="#D4D4D8">{experience.discription}</Typography>
+      <Typography variant='p2' color="#D4D4D8">{experience.discription}</Typography>
     </ExperienceCardDiv>
   );
 };
